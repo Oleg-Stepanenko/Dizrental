@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -695,6 +696,9 @@ input {
 
 .moscow {
     margin-bottom: clamp(40px, 1.5rem + 5vw, 120px);
+}
+.moscow_title {
+    display: none;
 }
 
 .moscow_about {
