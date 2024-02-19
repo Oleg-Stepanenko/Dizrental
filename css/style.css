@@ -293,7 +293,8 @@ input {
     background-color: var(--border_color);
 }
 
-.title_section {}
+.title_section {
+}
 
 .main_img {
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.11) 0%, rgba(17, 17, 17, 0.96) 100%), url(../img/main_img.png), lightgray 50%;
@@ -305,6 +306,9 @@ input {
 }
 
 .title_container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,11 +337,15 @@ input {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    gap: 48px;
     counter-reset: list;
     margin-bottom: clamp(40px, -0.65rem + 15.75vw, 292px);
+    scroll-snap-type: x mandatory;
+	overflow-x: auto;
 }
 
 .tittle_section_item {
+    scroll-snap-align: start;
     counter-increment: list;
     position: relative;
     display: flex;
@@ -345,6 +353,7 @@ input {
     font-size: 16px;
     line-height: clamp(22px, 1.325rem + 0.25vw, 26px);
 }
+
 
 .tittle_section_item::before {
     content: counter(list);
