@@ -1,0 +1,218 @@
+@media (max-width: 1900px) {
+    .sale_list::before, .sale_list::after {
+        top: 30px
+    }
+}
+@media (max-width: 1320px) {
+    .main_img {
+        border-radius: 0;
+    }
+    .rent_container {
+        position: static;
+        transform: translateX(0);
+        border-radius: 0;
+    }
+    .rent_input_list {
+        row-gap: 34px;
+    }
+    .rent_button {
+        width: 242px;
+    }
+    .rent_checkbox {
+        order: 3;
+    }
+    .our_fleet {
+        margin-top: clamp(40px, 1.1rem + 7vw, 110px);
+    }
+    .card_button {
+        gap: 24px;
+    }
+    .reservation {
+        border-radius: 0;
+    }
+    .order_list_item::before {
+        top: 40px;
+        left: 90px;
+    }
+    .sale_container {
+        border-radius: 0;
+    }
+}
+@media (max-width: 960px) {
+    .seven_info {
+        grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+        justify-items: center;
+    }
+    .seven_info_item {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+@media (max-width: 905px) {
+    .fleet_grid_item {
+        grid-template-columns: repeat(auto-fit, minmax(21.5rem, 1fr));
+    }
+    .grid_card_location {
+        top: 15px;
+        right: 15px;
+    }
+    .event_container {
+        justify-content: center;
+    }
+    .order_list {
+        justify-content: center;
+    }
+}
+@media (max-width: 866px) {
+    .fleet_title {
+        max-width: 100%;
+    }
+    .rent_input_calendar {
+        margin-right: 0;
+    }
+    .rent_input_list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rent_button {
+        order: 3;
+        width: 242px;
+    }
+    .rent_checkbox {
+        order: 2;
+        margin-right: 0;
+        width: 100%;
+        max-width: 504px;
+    }
+    .reservation_about {
+        max-width: 100%;
+    }
+    .reservation_form {
+        position: relative;
+        max-width: 100%;
+        display: flex;
+        column-gap: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .reservation_form_checkbox {
+        height: 76px;
+        justify-content: center;
+    }
+    .order_list_item {
+        flex-wrap: wrap;
+        height: 266px;
+    }
+    .sale_info {
+        width: 100%;
+    }
+    .sale_slider {
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+        align-items: end;
+        flex-wrap: wrap;
+    }
+    .sale_list::before, .sale_list::after {
+        top: 15px;
+        right: 25px;
+    }
+    .services_list {
+        justify-content: center;
+    }
+    .seven_info {
+        grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+        column-gap: 20px;
+    }
+}
+@media (max-width: 770px) {
+    .seven_info {
+        grid-template-columns: repeat(auto-fill, minmax(min(276px, 100%), 1fr));
+    }
+}
+
+@media (max-width: 610px) {
+    .seven_info_item {
+        flex-direction: row;
+    }
+}
+@media (max-width: 560px) {
+    .rent_input_calendar {
+        flex-direction: column;
+    }
+    .datepicker,
+    .rent_button {
+        width: 280px;
+    }
+    .rent_checkbox {
+        flex-wrap: wrap;
+        max-width: 280px;
+        column-gap: 20px;
+        row-gap: 26px;
+        justify-content: flex-start;
+    }
+    .rent_checkbox_elem {
+        width: 130px;
+        height: 100%;
+    }
+    .reservation_form {
+        order: -1;
+    }
+    .order_list_item::before {
+        top: 25px;
+        left: 85px;
+    }
+    .sale_list {
+        align-self: center;
+    }
+    .sale_main_title {
+        display: block;
+        order: 1;
+    }
+    .sale_slider {
+        order: 2;
+    }
+    .sale_info {
+        order: 3;
+    }
+    .sale_title {
+        display: none;
+    }
+    .sale_list::before, .sale_list::after {
+        top: 10px;
+        right: 15px;
+    }
+    .services_text_1 {
+        width: 190px;
+    }
+    .services_btn {
+        right: 20px;
+    }
+    .seven_img {
+        min-width: 80px;
+    }
+}
+@media (max-width: 320px) {
+    .rent_checkbox {
+        column-gap: 19px;
+        justify-content: flex-start;
+        row-gap: 0px;
+    }
+    .rent_checkbox_list_3 {
+        flex-direction: row;
+        max-width: 280px;
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 50px;
+    }
+    .fleet_grid_item {
+        justify-items: stretch;
+    }
+    .services_btn {
+        width: 50px;
+        height: 50px;
+        right: 10px;
+    }
+}

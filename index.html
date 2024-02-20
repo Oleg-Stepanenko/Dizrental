@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header class="header" id="start">
+    <!-- <header class="header" id="start">
         <div class="header_container">
             <div class="header_logo_pagination">
                 <a class="header_logo"><img src="img/logo.png" alt="логотип сайта"></a>
@@ -82,7 +82,7 @@
                 </a>
             </div>
         </div>
-    </header>
+    </header> -->
     <main class="main">
         <section class="title_section">
             <div class="main_container main_img">
@@ -99,57 +99,57 @@
                 </div>
             </div>
         </section>
-        <section class="order">
-            <div class="order_container">
-                <h2 class="order_title">Заказать аренду online</h2>
-                <div class="order_input_list">
-                    <div class="order_input_calendar">
-                        <div class="order_input">
+        <section class="rent">
+            <div class="rent_container">
+                <h2 class="rent_title">Заказать аренду online</h2>
+                <div class="rent_input_list">
+                    <div class="rent_input_calendar">
+                        <div class="rent_input">
                             <input type="text" class="datepicker" placeholder="Начало аренды" id="airdatepicker1">
                         </div>
-                        <div class="order_input">
+                        <div class="rent_input">
                             <input type="text" class="datepicker" placeholder="Завершение аренды" id="airdatepicker2">
                         </div>
                     </div>
-                    <div class="order_checkbox">
-                        <div class="order_checkbox_elem">
-                            <ul class="order_checkbox_list">
-                                <li class="order_checkbox_item">
+                    <div class="rent_checkbox">
+                        <div class="rent_checkbox_elem">
+                            <ul class="rent_checkbox_list">
+                                <li class="rent_checkbox_item">
                                     <input type="checkbox" class="custom-checkbox" id="offroader">
                                     <label class="order_checkbox_label" for="offroader">Внедорожник</label>
                                 </li>
-                                <li class="order_checkbox_item">
+                                <li class="rent_checkbox_item">
                                     <input type="checkbox" class="custom-checkbox" id="sport">
-                                    <label class="order_checkbox_label" for="sport">Спорт</label>
+                                    <label class="rent_checkbox_label" for="sport">Спорт</label>
                                 </li>
                             </ul>
                         </div>
-                        <div class="order_checkbox_elem">
-                            <ul class="order_checkbox_list">
-                                <li class="order_checkbox_item">
+                        <div class="rent_checkbox_elem">
+                            <ul class="rent_checkbox_list">
+                                <li class="rent_checkbox_item">
                                     <input type="checkbox" class="custom-checkbox" id="businesscar">
-                                    <label class="order_checkbox_label" for="businesscar">Бизнес</label>
+                                    <label class="rent_checkbox_label" for="businesscar">Бизнес</label>
                                 </li>
-                                <li class="order_checkbox_item">
+                                <li class="rent_checkbox_item">
                                     <input type="checkbox" class="custom-checkbox" id="sportcar">
-                                    <label class="order_checkbox_label" for="sportcar">Спорткар</label>
+                                    <label class="rent_checkbox_label" for="sportcar">Спорткар</label>
                                 </li>
                             </ul>
                         </div>
-                        <div class="order_checkbox_elem">
-                            <ul class="order_checkbox_list">
-                                <li class="order_checkbox_item">
+                        <div class="rent_checkbox_elem">
+                            <ul class="rent_checkbox_list rent_checkbox_list_3">
+                                <li class="rent_checkbox_item">
                                     <input type="checkbox" class="custom-checkbox " id="premium">
-                                    <label class="order_checkbox_label" for="premium">Премиум</label>
+                                    <label class="rent_checkbox_label" for="premium">Премиум</label>
                                 </li>
-                                <li class="order_checkbox_item">
+                                <li class="rent_checkbox_item">
                                     <input type="checkbox" class="custom-checkbox" id="comfort">
-                                    <label class="order_checkbox_label" for="comfort">Комфорт</label>
+                                    <label class="rent_checkbox_label" for="comfort">Комфорт</label>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <button class="order_button">Найти варианты</button>
+                    <button class="rent_button">Найти варианты</button>
                 </div>
             </div>
         </section>
@@ -245,7 +245,7 @@
                     <div class="fleet_grid_card">
                         <div class="grid_card_location">Москва</div>
                         <a href="#" class="grid_card_link"><img src="img/BMW_X2.png" alt="BMW_X2"
-                                class="grid_card_img"></a>
+                                class="grid_card_img contain-pic"></a>
                         <a href="#" class="grid_card_desc">
                             <h4 class="grid_card_title">BMW X2, 2021</h4>
                         </a>
@@ -428,25 +428,33 @@
             </div>
         </section>
         <section class="reservation main_container">
-            <h3 class="reservation_title">Арендовать авто прямо сейчас!</h3>
-            <div class="reservation_flex">
-                <div class="reservation_about">
-                    <p class="reservation_subtitle">Dizrental в Москве предлагает широкий выбор моделей от ведущих
-                        производителей, таких как Mercedes, BMW, Audi . Клиенты могут выбирать между спортивными
-                        автомобилями, роскошными седанами или эксклюзивными внедорожниками, чтобы насладиться комфортом
-                        и эстетикой этих превосходных машин.</p>
-                    <p class="reservation_text">Благодаря услугам аренды, каждый желающий может ощутить себя владельцем
-                        такого автомобиля на несколько дней или даже на несколько часов, без необходимости покупки и
-                        обслуживания.</p>
+            <div class="reservation_container">
+                <h3 class="reservation_title">Арендовать авто прямо сейчас!</h3>
+                <div class="reservation_flex">
+                    <div class="reservation_about">
+                        <p class="reservation_subtitle">Dizrental в Москве предлагает широкий выбор моделей от ведущих
+                            производителей, таких как Mercedes, BMW, Audi . Клиенты могут выбирать между спортивными
+                            автомобилями, роскошными седанами или эксклюзивными внедорожниками, чтобы насладиться
+                            комфортом
+                            и эстетикой этих превосходных машин.</p>
+                        <p class="reservation_text">Благодаря услугам аренды, каждый желающий может ощутить себя
+                            владельцем
+                            такого автомобиля на несколько дней или даже на несколько часов, без необходимости покупки и
+                            обслуживания.</p>
+                    </div>
+                    <form action="#" class="reservation_form">
+                        <input type="text" required placeholder="Ваше имя" class="reservation_input">
+                        <input type="tel" required placeholder="Ваш номер телефона" class="reservation_input tel">
+                        <input type="submit" value="Забронировать" class="reservation_button">
+                        <div class="reservation_form_checkbox">
+                            <input type="checkbox" required id="data-policy"
+                                class="reservation_checkbox custom-checkbox">
+                            <label for="data-policy" class="reservation_checkbox_label">Отправляя форму, я соглашаюсь
+                                с</label>
+                            <a href="#" class="reservation_checkbox_policy">политикой обработки персональных данных</a>
+                        </div>
+                    </form>
                 </div>
-                <form action="#" class="reservation_form">
-                    <input type="text" required placeholder="Ваше имя" class="reservation_input">
-                    <input type="tel" required placeholder="Ваш номер телефона" class="reservation_input tel">
-                    <input type="submit" value="Забронировать" class="reservation_button">
-                    <input type="checkbox" required id="data-policy" class="reservation_checkbox custom-checkbox">
-                    <label for="data-policy" class="reservation_checkbox_label">Отправляя форму, я соглашаюсь с</label>
-                    <a href="#" class="reservation_checkbox_policy">политикой обработки персональных данных</a>
-                </form>
             </div>
         </section>
         <section class="event secondary_container">
@@ -454,16 +462,26 @@
             <div class="event_container ">
                 <div class="event_card">
                     <img class="event_img" src="img/event_marriage.jpg" alt="Аренда авто на свадьбу">
-                    <h4 class="event_card_title">Аренда авто на свадьбу</h4>
-                    <p class="event_text">Предоставляем аренду премиальных автомобилей для свадьбы с водителем</p>
-                    <button class="event_button"></button>
+                    <div class="event_card_list">
+                        <div class="event_card_info">
+                            <h4 class="event_card_title">Аренда авто на свадьбу</h4>
+                            <p class="event_text">Предоставляем аренду премиальных автомобилей для свадьбы с водителем
+                            </p>
+                        </div>
+                        <button class="event_button"></button>
+                    </div>
                 </div>
                 <div class="event_card">
                     <img class="event_img" src="img/event_photosession.jpg" alt="Аренда авто для фотосессий">
-                    <h4 class="event_card_title">Аренда авто для фотосессий</h4>
-                    <p class="event_text">Предоставляем аренду премиальных автомобилей для фотосессий или видеосъемки
-                    </p>
-                    <button class="event_button"></button>
+                    <div class="event_card_list">
+                        <div class="event_card_info">
+                            <h4 class="event_card_title">Аренда авто для фотосессий</h4>
+                            <p class="event_text">Предоставляем аренду премиальных автомобилей для фотосессий или
+                                видеосъемки
+                            </p>
+                        </div>
+                        <button class="event_button"></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -503,33 +521,40 @@
         </section>
         <section class="sale">
             <div class="main_container sale_container">
-                <div class="sale_info">
-                    <h3 class="sale_title">Скидки и акции</h3>
-                    <p class="sale_text">Аренда элитных автомобилей в Москве предоставляет возможность воплотить мечты в
-                        реальность и создать незабываемые впечатления. Будь то эксклюзивная свадьба, впечатляющий
-                        деловой приезд или просто желание испытать роскошь и элегантность автомобиля премиум-класса, эта
-                        услуга открывает двери в мир высокого стиля и комфорта. </p>
-                    <p class="sale_subtext">Аренда элитных автомобилей в Москве - это возможность позволить себе немного
-                        роскоши и создать незабываемые моменты, которые останутся в памяти надолго.</p>
-                </div>
-                <div class="sale_slider">
-                    <ul class="sale_list">
-                        <li class="sale_item">
-                            <h5 class="sale_list_title">Арендовать авто прямо сейчас!</h5>
-                        </li>
-                        <li class="sale_item sale_item_img"><img src="img/sale.png" alt=""></li>
-                        <li class="sale_item">
-                            <h4 class="sale_slider_title">Скидки постоянным клиентам</h4>
-                        </li>
-                        <li class="sale_item">
-                            <p class="sale_slider_text">Постоянным клиентам мы предоставляем скидки до 30% при повторной
-                                аренде.</p>
-                        </li>
-                    </ul>
-                    <ul class="sale_btn_list">
-                        <li class="sale_btn_item"><button class="sale_btn sale_btn_left"></button></li>
-                        <li class="sale_btn_item"><button class="sale_btn sale_btn_right"></button></li>
-                    </ul>
+                <div class="sale_inner">
+                    <h3 class="sale_main_title">Арендовать авто прямо сейчас!</h3>
+                    <div class="sale_info">
+                        <h3 class="sale_title">Скидки и акции</h3>
+                        <p class="sale_text">Аренда элитных автомобилей в Москве предоставляет возможность воплотить
+                            мечты в
+                            реальность и создать незабываемые впечатления. Будь то эксклюзивная свадьба, впечатляющий
+                            деловой приезд или просто желание испытать роскошь и элегантность автомобиля премиум-класса,
+                            эта
+                            услуга открывает двери в мир высокого стиля и комфорта. </p>
+                        <p class="sale_subtext">Аренда элитных автомобилей в Москве - это возможность позволить себе
+                            немного
+                            роскоши и создать незабываемые моменты, которые останутся в памяти надолго.</p>
+                    </div>
+                    <div class="sale_slider">
+                        <ul class="sale_list">
+                            <li class="sale_item">
+                                <h5 class="sale_list_title">Арендовать авто прямо сейчас!</h5>
+                            </li>
+                            <li class="sale_item sale_item_img"><img class="sale_img" src="img/sale.png" alt=""></li>
+                            <li class="sale_item">
+                                <h4 class="sale_slider_title">Скидки постоянным клиентам</h4>
+                            </li>
+                            <li class="sale_item">
+                                <p class="sale_slider_text">Постоянным клиентам мы предоставляем скидки до 30% при
+                                    повторной
+                                    аренде.</p>
+                            </li>
+                        </ul>
+                        <ul class="sale_btn_list">
+                            <li class="sale_btn_item"><button class="sale_btn sale_btn_left"></button></li>
+                            <li class="sale_btn_item"><button class="sale_btn sale_btn_right"></button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -538,18 +563,27 @@
                 <h3 class="services_title">Наши услуги</h3>
                 <ul class="services_list">
                     <li class="services_item">
-                        <img class="services_img" src="img/services_img1.jpg" alt="">
-                        <p class="services_text">Доставляем авто в любую точку Москвы</p>
+                        <picture>
+                            <source srcset="img/services_img1l.jpg" media="(max-width: 320px)">
+                            <img class="services_img" src="img/services_img1.jpg" alt="">
+                        </picture>
+                        <p class="services_text services_text_1">Доставляем авто в любую точку Москвы</p>
                         <button class="services_btn"></button>
                     </li>
                     <li class="services_item">
-                        <img class="services_img" src="img/services_img2.jpg" alt="">
-                        <p class="services_text">Аренда авто с личным водителем</p>
+                        <picture>
+                            <source srcset="img/services_img2l.jpg" media="(max-width: 320px)">
+                            <img class="services_img" src="img/services_img2.jpg" alt="">
+                        </picture>
+                        <p class="services_text services_text_2">Аренда авто с личным водителем</p>
                         <button class="services_btn"></button>
                     </li>
                     <li class="services_item">
-                        <img class="services_img" src="img/services_img3.jpg" alt="">
-                        <p class="services_text services_text_last">Водитель на подмену</p>
+                        <picture>
+                            <source srcset="img/services_img3l.jpg" media="(max-width: 320px)">
+                            <img class="services_img" src="img/services_img3.jpg" alt="">
+                        </picture>
+                        <p class="services_text services_text_3">Водитель на подмену</p>
                         <button class="services_btn"></button>
                     </li>
                 </ul>
@@ -560,28 +594,48 @@
                 <h3 class="seven_title">6 причин заказать аренду авто в DizRental</h3>
                 <div class="seven_info">
                     <div class="seven_info_item">
-                        <div class="seven_img"><img src="img/seven_img1.svg" alt=""></div>
+                        <div class="seven_img">
+                            <picture>
+                                <source srcset="img/seven_img1m.svg" media="(max-width: 610px)">
+                                <img src="img/seven_img1.svg" alt="">
+                            </picture>
+                        </div>
                         <div class="seven_item_wrapper">
                             <p class="seven_info_title">Страховка</p>
                             <p class="seven_item_text">Все наши автомобили застрахованы по ОСАГО И КАСКО</p>
                         </div>
                     </div>
                     <div class="seven_info_item">
-                        <div class="seven_img"><img src="img/seven_img2.svg" alt=""></div>
+                        <div class="seven_img">
+                            <picture>
+                                <source srcset="img/seven_img2m.svg" media="(max-width: 610px)">
+                                <img src="img/seven_img2.svg" alt="">
+                            </picture>
+                        </div>
                         <div class="seven_item_wrapper">
                             <p class="seven_info_title">Ценовая политика</p>
                             <p class="seven_item_text">Всегда доступные цены и приятные бонусы постоянным клиентам</p>
                         </div>
                     </div>
                     <div class="seven_info_item">
-                        <div class="seven_img"><img src="img/seven_img2.svg" alt=""></div>
+                        <div class="seven_img">
+                            <picture>
+                                <source srcset="img/seven_img2m.svg" media="(max-width: 610px)">
+                                <img src="img/seven_img2.svg" alt="">
+                            </picture>
+                        </div>
                         <div class="seven_item_wrapper">
                             <p class="seven_info_title">Ценовая политика</p>
                             <p class="seven_item_text">Всегда доступные цены и приятные бонусы постоянным клиентам</p>
                         </div>
                     </div>
                     <div class="seven_info_item">
-                        <div class="seven_img"><img src="img/seven_img3.svg" alt=""></div>
+                        <div class="seven_img">
+                            <picture>
+                                <source srcset="img/seven_img3m.svg" media="(max-width: 610px)">
+                                <img src="img/seven_img3.svg" alt="">
+                            </picture>
+                        </div>
                         <div class="seven_item_wrapper">
                             <p class="seven_info_title">Оплата</p>
                             <p class="seven_item_text">Любая удобная для вас форма оплаты (нал/безнал, банковский
@@ -589,7 +643,12 @@
                         </div>
                     </div>
                     <div class="seven_info_item">
-                        <div class="seven_img"><img src="img/seven_img4.svg" alt=""></div>
+                        <div class="seven_img">
+                            <picture>
+                                <source srcset="img/seven_img4m.svg" media="(max-width: 610px)">
+                                <img src="img/seven_img4.svg" alt="">
+                            </picture>
+                        </div>
                         <div class="seven_item_wrapper">
                             <p class="seven_info_title">Автопарк</p>
                             <p class="seven_item_text">Весь автопарк в отличном состоянии
@@ -597,7 +656,12 @@
                         </div>
                     </div>
                     <div class="seven_info_item">
-                        <div class="seven_img"><img src="img/seven_img5.svg" alt=""></div>
+                        <div class="seven_img">
+                            <picture>
+                                <source srcset="img/seven_img5m.svg" media="(max-width: 610px)">
+                                <img src="img/seven_img5.svg" alt="">
+                            </picture>
+                        </div>
                         <div class="seven_item_wrapper">
                             <p class="seven_info_title">Скорость</p>
                             <p class="seven_item_text">Оформление аренды любого авто в течении не более 15 минут</p>
@@ -606,7 +670,7 @@
                 </div>
             </div>
         </section>
-        <section class="city">
+        <!-- <section class="city">
             <div class="main_container city_container">
                 <div class="secondary_container city_info">
                     <div class="city_inner_dubai">
@@ -767,25 +831,26 @@
                 </div>
             </div>
         </footer>
-    </main>
-    <div class="popup popup_none" id="popupWrp">
-        <form action="#" class="popup_form">
-            <h3 class="popup_title">Хочу машину</h3>
-            <input type="text" required placeholder="Имя" class="popup_input">
-            <input type="tel" required placeholder="Телефон" class="popup_input tel">
-            <input type="submit" value="Отправить" class="popup_button">
-            <button type="button" class="popup_close" id="popupCloseBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="popup_svg" viewBox="0 0 16 16">
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                </svg>
-            </button>
-        </form>
-    </div>
-    <script src="datepicker/air-datepicker.js"></script>
-    <script src="datepicker/air.js"></script>
-    <script src="js/mask.js"></script>
-    <script src="js/popup.js"></script>
+    </main> -->
+        <div class="popup popup_none" id="popupWrp">
+            <form action="#" class="popup_form">
+                <h3 class="popup_title">Хочу машину</h3>
+                <input type="text" required placeholder="Имя" class="popup_input">
+                <input type="tel" required placeholder="Телефон" class="popup_input tel">
+                <input type="submit" value="Отправить" class="popup_button">
+                <button type="button" class="popup_close" id="popupCloseBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="popup_svg"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <script src="datepicker/air-datepicker.js"></script>
+        <script src="datepicker/air.js"></script>
+        <script src="js/mask.js"></script>
+        <script src="js/popup.js"></script>
 </body>
 
 </html>
