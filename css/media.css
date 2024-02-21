@@ -3,6 +3,20 @@
         top: 30px
     }
 }
+@media (max-width: 1440px) {
+    .city_inner_dubai, .city_inner_moscow {
+        column-gap: 90px;
+    }
+    .city_inner_dubai {
+        grid-template-columns: 550px 580px;
+    }
+    .city_inner_moscow {
+        grid-template-columns: 448px 682px;
+    }
+    .city_moscow_list {
+        gap: 75px;
+    }
+}
 @media (max-width: 1320px) {
     .main_img {
         border-radius: 0;
@@ -37,7 +51,48 @@
     .sale_container {
         border-radius: 0;
     }
+    .city_container {
+        border-radius: 0;
+    }
+    .city_car_logo {
+        border-radius: 0;
+    }
+    .city_inner_dubai, .city_inner_moscow {
+        column-gap: 60px;
+    }
+    .city_inner_dubai {
+        grid-template-columns: 500px 525px;
+    }
+    .city_inner_moscow {
+        grid-template-columns: 385px 640px;
+    }
 }
+@media (max-width: 1200px) {
+    .city_inner_dubai, .city_inner_moscow {
+        gap: 30px;
+    }
+    .city_inner_dubai {
+        grid-template-columns: 400px 230px 230px;
+        grid-template-areas:
+            'city_dubai_title    city_dubai_title   city_dubai_title'
+            'city_dubai_text     city_dubai_img     city_dubai_img'
+            'city_dubai_subtext  city_dubai_img     city_dubai_img'
+    }
+    .city_inner_moscow {
+        grid-template-columns: 350px 350px 160px;
+        grid-template-areas:
+            'city_moscow_title city_moscow_title    city_moscow_title'
+            'city_moscow_img   city_moscow_text     city_moscow_text'
+            'city_moscow_img   city_moscow_subtext  city_moscow_subtext'
+            'city_moscow_img   .                    .                  '
+            'city_moscow_list  city_moscow_list     city_moscow_list'
+    }
+    .questions_container {
+        gap: 90px;
+    }
+}
+
+
 @media (max-width: 960px) {
     .seven_info {
         grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
@@ -46,6 +101,34 @@
     .seven_info_item {
         flex-direction: column;
         row-gap: 20px;
+    }
+    .city_inner_dubai {
+        grid-template-columns: 350px 200px 200px;
+        grid-template-areas:
+            'city_dubai_title    city_dubai_title   city_dubai_title'
+            'city_dubai_text     city_dubai_img     city_dubai_img'
+            'city_dubai_subtext  city_dubai_img     city_dubai_img'
+    }
+    .city_inner_moscow {
+        grid-template-columns: 300px 300px 150px;
+        grid-template-areas:
+            'city_moscow_title   city_moscow_title    city_moscow_title'
+            'city_moscow_img     city_moscow_text     city_moscow_text'
+            'city_moscow_img     city_moscow_subtext  city_moscow_subtext'
+            'city_moscow_img   .                    .                  '
+            'city_moscow_list  city_moscow_list     city_moscow_list'
+    }
+    .questions_container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    .questions_list {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (max-width: 905px) {
@@ -61,6 +144,24 @@
     }
     .order_list {
         justify-content: center;
+    }
+    .footer_container {
+        justify-content: center;
+    }
+    .footer_info {
+        width: 100%;
+    }
+    .footer_logo {
+        width: 381px;
+    }
+    .footer_form {
+        justify-content: flex-start;
+    }
+    .footer_aside {
+        max-width: 100%;
+    }
+    .footer_nav {
+        column-gap: 50px;
     }
 }
 @media (max-width: 866px) {
@@ -126,16 +227,84 @@
         grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
         column-gap: 20px;
     }
+    .city_inner_dubai {
+        grid-template-columns: 300px 180px 180px;
+        grid-template-areas:
+            'city_dubai_title    city_dubai_title   city_dubai_title'
+            'city_dubai_text     city_dubai_img     city_dubai_img'
+            'city_dubai_subtext  city_dubai_img     city_dubai_img'
+    }
+    .city_inner_moscow {
+        grid-template-columns: 280px 250px 130px;
+        grid-template-areas:
+            'city_moscow_title city_moscow_title    city_moscow_title'
+            'city_moscow_img   city_moscow_text     city_moscow_text'
+            'city_moscow_img   city_moscow_subtext  city_moscow_subtext'
+            'city_moscow_img   .                    .                  '
+            'city_moscow_list  city_moscow_list     city_moscow_list'
+    }
 }
 @media (max-width: 770px) {
     .seven_info {
         grid-template-columns: repeat(auto-fill, minmax(min(276px, 100%), 1fr));
     }
+    .city_inner_dubai {
+        grid-template-columns: 560px;
+        grid-template-areas:
+            'city_dubai_title'
+            'city_dubai_img'
+            'city_dubai_text'
+            'city_dubai_subtext'
+    }
+    .city_inner_moscow {
+        grid-template-columns: 448px 82px;
+        grid-template-areas:
+            'city_moscow_title    city_moscow_title'
+            'city_moscow_img      . '
+            'city_moscow_text     city_moscow_text'
+            'city_moscow_subtext  city_moscow_subtext'
+            'city_moscow_list     city_moscow_list'
+    }
+    .city_moscow_list {
+        gap: 70px;
+    }
 }
-
 @media (max-width: 610px) {
     .seven_info_item {
         flex-direction: row;
+    }
+    .city_inner_dubai {
+        grid-template-columns: 420px;
+    }
+    .city_inner_moscow {
+        grid-template-columns: 350px 40px;
+        grid-template-areas:
+            'city_moscow_title    city_moscow_title'
+            'city_moscow_img      . '
+            'city_moscow_text     city_moscow_text'
+            'city_moscow_subtext  city_moscow_subtext'
+            'city_moscow_list     city_moscow_list'
+    }
+    .city_moscow_list {
+        flex-wrap: wrap;
+        padding-left: 67px;
+        gap: 20px;
+    }
+    .moscow_item_1:before {
+        top: 0px;
+        left: -67px;
+    }
+    .moscow_item_2::before {
+        top: 0px;
+        left: -67px;
+    }
+    .moscow_item_3::before {
+        top: 0px;
+        left: -67px;
+    }
+    .questions_checkbox_policy {
+        margin-left: 0;
+
     }
 }
 @media (max-width: 560px) {
@@ -192,6 +361,44 @@
     }
     .seven_img {
         min-width: 80px;
+    }
+    .footer_main_container{
+        padding: 0;
+    }
+    .footer_info,
+    .footer_privacy {
+        padding: 0 20px;
+    }
+    .footer_privacy {
+        border-top: 0;
+    }
+    .footer_nav {
+        column-gap: 88px;
+        display: none;
+    }
+    .footer_nav_m {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .city_inner_dubai {
+        grid-template-columns: 1fr;
+    }
+    .city_inner_moscow {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'city_moscow_title'
+            'city_moscow_img'
+            'city_moscow_text'
+            'city_moscow_subtext'
+            'city_moscow_list'
+    }
+    .footer_logo {
+        width: 280px;
+    }
+    .footer_contacts_list {
+        align-items: start;
     }
 }
 @media (max-width: 320px) {
