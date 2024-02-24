@@ -16,6 +16,9 @@
     .city_moscow_list {
         gap: 75px;
     }
+    .header_nav_list {
+        max-width: 352px;
+    }
 }
 @media (max-width: 1320px) {
     .main_img {
@@ -65,6 +68,30 @@
     }
     .city_inner_moscow {
         grid-template-columns: 385px 640px;
+    }
+    .menu_btn {
+        display: flex;
+    }
+    .header_nav {
+        flex-direction: column;
+        background-color: var(--header-color);
+        filter: drop-shadow(0 5 40 0 rgba(0, 0, 0, 0.06));
+        position: absolute;
+        width: 280px;
+        left: 0;
+        top: 0;
+        padding: 20px;
+        transform: translateY(-120%);
+        transition: transform 0.4s ease-in-out;
+    }
+    .header_profile {
+        max-width: 155px;
+    }
+    .menu_open {
+        transform: translateY(0%);
+    }
+    .header_nav_list, .header_contacts, .header_contacts_tel {
+        flex-direction: column;
     }
 }
 @media (max-width: 1200px) {
@@ -162,6 +189,9 @@
     }
     .footer_nav {
         column-gap: 50px;
+    }
+    .event_card {
+        max-width: 100%;
     }
 }
 @media (max-width: 866px) {
@@ -267,6 +297,9 @@
     }
     .city_moscow_list {
         gap: 70px;
+    }
+    .order_list_item {
+        width: 100%;
     }
 }
 @media (max-width: 610px) {
@@ -399,6 +432,20 @@
     }
     .footer_contacts_list {
         align-items: start;
+    }
+    .header_profile_link {
+        width: 35px;
+        height: 36px;
+    }
+    .menu_btn {
+        width: 21px;
+        height: 16px;
+    }
+    .header_nav {
+        width: 270px;
+    }
+    .fleet_grid_card {
+        max-width: 100%;
     }
 }
 @media (max-width: 320px) {
