@@ -444,6 +444,9 @@
     .header_nav {
         width: 270px;
     }
+    .fleet_grid_item {
+        grid-template-columns: 1fr;
+    }
     .fleet_grid_card {
         max-width: 100%;
     }
