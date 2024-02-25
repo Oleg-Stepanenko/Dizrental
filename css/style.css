@@ -201,9 +201,23 @@ input {
     transition: color 0.3s ease-in-out;
 }
 
-.header_nav_item:hover {
-    color: var(--main_color);
+@media (hover: hover) {
+    .header_nav_item:hover {
+        color: var(--main_color);
+    }
 }
+
+@media (hover: none) {
+    .header_nav_item:active {
+        color: var(--main_color);
+    }
+}
+
+
+
+
+
+
 
 .header_contacts {
     width: 100%;
@@ -229,9 +243,18 @@ input {
     transition: fill 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.header_iconlink_svg:hover {
-    fill: var(--white-color);
-    opacity: 1;
+@media (hover: hover) {
+    .header_iconlink_svg:hover {
+        fill: var(--white-color);
+        opacity: 1;
+    }
+}
+
+@media (hover: none) {
+    .header_iconlink_svg:active {
+        fill: var(--white-color);
+        opacity: 1;
+    }
 }
 
 
@@ -255,9 +278,18 @@ input {
     transition: text-decoration-color 0.3s ease-in-out;
 }
 
-.header_contacts_tellink1:hover {
-    text-decoration-color: var(--white-color);
+@media (hover: hover) {
+    .header_contacts_tellink1:hover {
+        text-decoration-color: var(--white-color);
+    }
 }
+
+@media (hover: none) {
+    .header_contacts_tellink1:active {
+        text-decoration-color: var(--white-color);
+    }
+}
+
 
 .header_contacts_tellink2 {
     text-wrap: nowrap;
@@ -277,8 +309,16 @@ input {
     transition: background-color 0.3s ease-in-out;
 }
 
-.header_contacts_tellink2:hover {
-    background-color: var(--border_color);
+@media (hover: hover) {
+    .header_contacts_tellink2:hover {
+        background-color: var(--border_color);
+    }
+}
+
+@media (hover: none) {
+    .header_contacts_tellink2:active {
+        background-color: var(--border_color);
+    }
 }
 
 .header_profile {
@@ -301,8 +341,17 @@ input {
     justify-content: center;
     transition: background-color 0.3s ease-in-out;
 }
-.header_profile:hover .header_profile_link:hover {
-    background-color: var(--border_color);
+
+@media (hover: hover) {
+    .header_profile:hover .header_profile_link:hover {
+        background-color: var(--border_color);
+    }
+}
+
+@media (hover: none) {
+    .header_profile:active .header_profile_link:active {
+        background-color: var(--border_color);
+    }
 }
 
 .main_img {
@@ -521,8 +570,16 @@ input {
     line-height: 20px;
 }
 
-.rent_button:hover {
-    background: var(--gold_color_hover)
+@media (hover: hover) {
+    .rent_button:hover {
+        background: var(--gold_color_hover)
+    }
+}
+
+@media (hover: none) {
+    .rent_button:active {
+        background: var(--gold_color_hover)
+    }
 }
 
 .our_fleet {
@@ -553,10 +610,20 @@ input {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.fleet_title_link:hover {
-    background-color: var(--border_color);
-    color: var(--white-color);
-    border: 0px;
+@media (hover: hover) {
+    .fleet_title_link:hover {
+        background-color: var(--border_color);
+        color: var(--white-color);
+        border: 0px;
+    }
+}
+
+@media (hover: none) {
+    .fleet_title_link:active {
+        background-color: var(--border_color);
+        color: var(--white-color);
+        border: 0px;
+    }
 }
 
 .fleet_menu {
@@ -593,8 +660,16 @@ input {
     transition: background-color 0.3s ease-in-out;
 }
 
-.fleet_menu_link:hover {
-    background-color: var(--main_menu_color);
+@media (hover: hover) {
+    .fleet_menu_link:hover {
+        background-color: var(--main_menu_color);
+    }
+}
+
+@media (hover: none) {
+    .fleet_menu_link:active {
+        background-color: var(--main_menu_color);
+    }
 }
 
 .fleet_menu_link:active {
@@ -703,8 +778,16 @@ input {
     line-height: 20px;
 }
 
-.card_button_link:hover {
-    background: var(--gold_color_hover);
+@media (hover: hover) {
+    .card_button_link:hover {
+        background: var(--gold_color_hover);
+    }
+}
+
+@media (hover: none) {
+    .card_button_link:active {
+        background: var(--gold_color_hover);
+    }
 }
 
 .card_button_info {
@@ -844,9 +927,19 @@ input {
     transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.reservation_button:hover {
-    color: var(--black-color);
-    background-color: var(--white-color);
+
+@media (hover: hover) {
+    .reservation_button:hover {
+        color: var(--black-color);
+        background-color: var(--white-color);
+    }
+}
+
+@media (hover: none) {
+    .reservation_button:active {
+        color: var(--black-color);
+        background-color: var(--white-color);
+    }
 }
 
 .reservation_form_checkbox {
@@ -953,8 +1046,16 @@ input {
     transition: background-color 0.3s ease-in-out;
 }
 
-.event_button:hover {
-    background-color: var(--event_button_hover_color);
+@media (hover: hover) {
+    .event_button:hover {
+        background-color: var(--event_button_hover_color);
+    }
+}
+
+@media (hover: none) {
+    .event_button:active {
+        background-color: var(--event_button_hover_color);
+    }
 }
 
 .event_button:active {
@@ -1152,9 +1253,19 @@ input {
     transition: background-color 0.3s ease-in-out;
 }
 
-.sale_btn:hover {
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.12);
+
+@media (hover: hover) {
+    .sale_btn:hover {
+        border: 0;
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+}
+
+@media (hover: none) {
+    .sale_btn:active {
+        border: 0;
+        background-color: rgba(255, 255, 255, 0.12);
+    }
 }
 
 .sale_btn:active {
@@ -1230,8 +1341,17 @@ input {
     transition: background-color 0.3s ease-in-out;
 }
 
-.services_btn:hover {
-    background-color: var(--card_border_color);
+
+@media (hover: hover) {
+    .services_btn:hover {
+        background-color: var(--card_border_color);
+    }
+}
+
+@media (hover: none) {
+    .services_btn:active {
+        background-color: var(--card_border_color);
+    }
 }
 
 .seven {
@@ -1401,8 +1521,16 @@ input {
     transition: text-decoration-color 0.3s ease-in-out;
 }
 
-.city_moscow_link:hover {
-    text-decoration-color: var(--white-color);
+@media (hover: hover) {
+    .city_moscow_link:hover {
+        text-decoration-color: var(--white-color);
+    }
+}
+
+@media (hover: none) {
+    .city_moscow_link:active {
+        text-decoration-color: var(--white-color);
+    }
 }
 
 .city_moscow_list {
@@ -1542,8 +1670,16 @@ input {
     line-height: 24px;
 }
 
-.questions_tel:hover {
-    text-decoration-color: var(--black-color);
+@media (hover: hover) {
+    .questions_tel:hover {
+        text-decoration-color: var(--black-color);
+    }
+}
+
+@media (hover: none) {
+    .questions_tel:active {
+        text-decoration-color: var(--black-color);
+    }
 }
 
 .questions_form {
@@ -1586,11 +1722,20 @@ input {
     line-height: 20px;
     transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
-
-.questions_button:hover {
-    color: var(--white-color);
-    background-color: var(--black-color);
+@media (hover: hover) {
+    .questions_button:hover {
+        color: var(--white-color);
+        background-color: var(--black-color);
+    }
 }
+
+@media (hover: none) {
+    .questions_button:active {
+        color: var(--white-color);
+        background-color: var(--black-color);
+    }
+}
+
 
 .questions_checkbox_label {
     cursor: pointer;
@@ -1724,8 +1869,16 @@ input {
     margin-bottom: clamp(22px, 1.3rem + 0.38vw, 28px);
 }
 
-.footer_item_link:hover {
-    color: var(--white-color);
+@media (hover: hover) {
+    .footer_item_link:hover {
+        color: var(--white-color);
+    }
+}
+
+@media (hover: none) {
+    .footer_item_link:active {
+        color: var(--white-color);
+    }
 }
 
 .footer_icon {
@@ -1766,8 +1919,16 @@ input {
     transition: color 0.3s ease-in-out;
 }
 
-.footer_link:hover {
-    color: var(--white-color);
+@media (hover: hover) {
+    .footer_link:hover {
+        color: var(--white-color);
+    }
+}
+
+@media (hover: none) {
+    .footer_link:active {
+        color: var(--white-color);
+    }
 }
 
 .footer_privacy {
@@ -1780,9 +1941,18 @@ input {
     font-size: 13px;
     line-height: 22px;
 }
-.footer_privacy_link:hover {
-    transition: 0.3s ease-in-out;
-    color: var(--white-color);
+@media (hover: hover) {
+    .footer_privacy_link:hover {
+        transition: 0.3s ease-in-out;
+        color: var(--white-color);
+    }
+}
+
+@media (hover: none) {
+    .footer_privacy_link:active {
+        transition: 0.3s ease-in-out;
+        color: var(--white-color);
+    }
 }
 
 .footer_nav_m {
@@ -1922,9 +2092,16 @@ summary:focus {
     line-height: 20px;
     transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+@media (hover: hover) {
+    .popup_button:hover {
+        background-color: var(--button_color);
+    }
+}
 
-.popup_button:hover {
-    background-color: var(--button_color);
+@media (hover: none) {
+    .popup_button:active {
+        background-color: var(--button_color);
+    }
 }
 
 .popup_close {
@@ -1934,9 +2111,20 @@ summary:focus {
     fill: var(--black-color);
     cursor: pointer;
 }
-
-.popup_close:hover,
 .popup_close:active {
     transition: 0.3s ease-in-out;
     opacity: 0.8;
+}
+@media (hover: hover) {
+    .popup_close:hover {
+        transition: 0.3s ease-in-out;
+        opacity: 0.8;
+    }
+}
+
+@media (hover: none) {
+    .popup_close:active {
+        transition: 0.3s ease-in-out;
+        opacity: 0.8;
+    }
 }
